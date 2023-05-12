@@ -7,10 +7,8 @@ from django.test import SimpleTestCase
 
 from books.apps import BooksConfig
 from books.book.data.book_abstract_repo import BookAbstractRepo
-from books.book.domain.use_cases.list_all_books_use_case import \
-    ListAllBooksUseCase
-from books.book.tests.factories import (BookDomainModelFactory,
-                                        BookListDomainModeFactory)
+from books.book.domain.use_cases.list_all_books_use_case import ListAllBooksUseCase
+from books.book.tests.factories import BookDomainModelFactory, BookListDomainModeFactory
 
 books_app = cast(BooksConfig, apps.get_app_config("books"))
 

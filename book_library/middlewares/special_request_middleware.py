@@ -1,6 +1,3 @@
-from django.contrib.auth.middleware import AuthenticationMiddleware
-from django.middleware.security import SecurityMiddleware
-
 
 class SpecialObject:
     def __init__(self, value: int):

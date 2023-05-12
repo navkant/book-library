@@ -1,7 +1,6 @@
 import factory
 
-from books.book.domain.domain_models import (BookDomainModel,
-                                             BookListDomainModel)
+from books.book.domain.domain_models import BookDomainModel, BookListDomainModel
 from books.models import Book
 
 

@@ -1,8 +1,7 @@
 from typing import List
 
 from books.book.data.book_abstract_repo import BookAbstractRepo
-from books.book.domain.domain_models import (BookDomainModel,
-                                             BookListDomainModel)
+from books.book.domain.domain_models import BookDomainModel, BookListDomainModel
 from books.models import Book
 
 

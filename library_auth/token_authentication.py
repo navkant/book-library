@@ -30,6 +30,7 @@ class BearerTokenAuthentication(BaseAuthentication):
         if token.expiry < timezone.now():
             raise AuthTokenExpired
 
+        request.user = token.user
         return token.user, token
 
     def _get_authorization_header(self, request):

@@ -3,12 +3,13 @@ from rest_framework import response, status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 
-from books.book.domain.use_cases.filter_books_by_genre_use_case import \
-    FilterBooksByGenreUseCase
-from books.book.domain.use_cases.filter_books_by_name_use_case import \
-    FilterBooksByNameUseCase
-from books.book.domain.use_cases.list_all_books_use_case import \
-    ListAllBooksUseCase
+from books.book.domain.use_cases.filter_books_by_genre_use_case import (
+    FilterBooksByGenreUseCase,
+)
+from books.book.domain.use_cases.filter_books_by_name_use_case import (
+    FilterBooksByNameUseCase,
+)
+from books.book.domain.use_cases.list_all_books_use_case import ListAllBooksUseCase
 from books.book.presentation.types import BookFilterRequest, BookListResponse
 
 

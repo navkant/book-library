@@ -2,11 +2,12 @@ from datetime import datetime
 from typing import List, Optional
 
 from pydantic import BaseModel
+from books.book.domain.domain_models import BookDomainModel
 
 
 class BookItemDomainModel(BaseModel):
     id: int
-    book_id: str
+    book: BookDomainModel
     book_item_id: str
     borrowed_by_id: Optional[int]
     borrowed_at: Optional[datetime]

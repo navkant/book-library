@@ -1,8 +1,7 @@
 from django.test import TestCase
 
 from books.book.data.book_db_repo import BookDbRepo
-from books.book.domain.domain_models import (BookDomainModel,
-                                             BookListDomainModel)
+from books.book.domain.domain_models import BookDomainModel, BookListDomainModel
 from books.book.tests.factories import BookFactory
 
 
