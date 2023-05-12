@@ -13,11 +13,13 @@ from books.book_items.domain.use_cases.list_book_items_use_case import (
 )
 from books.book_items.domain.use_cases.list_borrowed_books import ListBorrowedBookItemsUseCase
 from books.book_items.presentation.types import BookItemResponse, BookItemsListResponse
+from ddtrace import tracer
 
 
 class ListBookItemsView(APIView):
     permission_classes = [IsAuthenticated]
 
+    @tracer.wrap(service="my_new_resource", resource="book_item")
     def get(
         self,
         request,

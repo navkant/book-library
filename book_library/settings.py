@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "books",
     "library_auth",
+    'ddtrace.contrib.django',
 ]
 
 MIDDLEWARE = [
